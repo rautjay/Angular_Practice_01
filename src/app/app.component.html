@@ -1,0 +1,31 @@
+<h1>Login form </h1>
+<form action="">
+  
+  <input type="text" placeholder="Enter Name">
+  <br>
+  <input type="text" placeholder="Enter email">
+  <br>
+  <input type="text" placeholder="Enter contact">
+  <br>
+  <input type="text" placeholder="Enter Address" value="{{545+5}}">
+  <br>
+<button>Submit</button>
+
+<app-login>Login Component Working</app-login>
+<app-sign-in></app-sign-in>
+
+<button (click)="getname('Jay',23456)">click function</button>
+<br><br>
+
+
+</form>
+<input type="text" #box  (keyup)="getvalue(box.value)" placeholder="Keyup">
+<br><br>
+<input type="text" #box1  (keydown)="getvalue(box1.value)" placeholder="Keydown">
+<br><br>
+<input type="text" #box2 (blur)="getvalue(box2.value)" placeholder="blur">
+<br> <br>
+<input type="text" #box3 (input)="getvalue(box3.value)" placeholder="input">
+
+<h1 (mouseover) = "getvalue('over')"> I am jay raut</h1>
+<h1 (mouseleave) = "getvalue('leave')"> I am jay raut</h1>
